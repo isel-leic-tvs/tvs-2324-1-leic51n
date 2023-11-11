@@ -3,7 +3,6 @@
 	
 _start:
 	# write(1, msg, 14);
-
 	movq $14, %rdx
 	leaq msg(%rip), %rsi
 	movq $1, %rdi
@@ -11,7 +10,6 @@ _start:
 	syscall
 	
 	# exit(0);
-	
 	xorq %rdi, %rdi
 	movq $60, %rax
 	syscall
